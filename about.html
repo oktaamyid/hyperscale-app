@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - HyperScale</title>
+    <meta name="description" content="Pelajari lebih lanjut tentang HyperScale, visi, misi, dan tim di balik platform PaaS terdepan di Indonesia.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f4ff',
+                            100: '#e0eaff',
+                            200: '#c7d7fe',
+                            300: '#a5bbfc',
+                            400: '#8399f8',
+                            500: '#667eea',
+                            600: '#5a67d8',
+                            700: '#4c51bf',
+                            800: '#434190',
+                            900: '#3c366b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-inter bg-white text-gray-900" x-data="navigation">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-cube text-white text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gradient">HyperScale</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary-600 transition-colors">Beranda</a>
+                    <a href="about.html" class="text-primary-600 font-medium hover:text-primary-700 transition-colors">Tentang</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary-600 transition-colors">Layanan</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary-600 transition-colors">Kontak</a>
+                    <a href="contact.html" class="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors btn-primary">
+                        Mulai Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button @click="toggleMobileMenu()" class="text-gray-600 hover:text-primary-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl" x-show="!mobileMenuOpen"></i>
+                        <i class="fas fa-times text-xl" x-show="mobileMenuOpen"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div x-show="mobileMenuOpen" x-transition class="md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-600 hover:text-primary-600" @click="closeMobileMenu()">Beranda</a>
+                <a href="about.html" class="block px-3 py-2 text-primary-600 font-medium" @click="closeMobileMenu()">Tentang</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-600 hover:text-primary-600" @click="closeMobileMenu()">Layanan</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-600 hover:text-primary-600" @click="closeMobileMenu()">Kontak</a>
+                <a href="contact.html" class="block mx-3 mt-4 bg-primary-600 text-white px-6 py-2 rounded-lg text-center hover:bg-primary-700 transition-colors" @click="closeMobileMenu()">
+                    Mulai Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 via-white to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Tentang <span class="text-gradient">HyperScale</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Kami adalah tim yang berdedikasi untuk menghadirkan solusi Platform as a Service terbaik, membantu developer dan perusahaan mencapai potensi maksimal mereka.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Visi & Misi Kami</h2>
+                    
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-semibold text-primary-600 mb-4">Visi</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Menjadi platform cloud terdepan di Asia Tenggara yang memberdayakan developer dan perusahaan untuk menciptakan inovasi teknologi yang mengubah dunia.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary-600 mb-4">Misi</h3>
+                        <ul class="space-y-3 text-lg text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary-500 mt-1 mr-3"></i>
+                                Menyediakan platform yang mudah digunakan dan dapat diandalkan
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary-500 mt-1 mr-3"></i>
+                                Mendukung pertumbuhan startup dan enterprise dengan teknologi terdepan
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary-500 mt-1 mr-3"></i>
+                                Memberikan service excellence dengan dukungan 24/7
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary-500 mt-1 mr-3"></i>
+                                Berinovasi terus-menerus untuk menghadapi tantangan masa depan
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="animate-on-scroll">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl p-8 shadow-xl">
+                            <div class="grid grid-cols-2 gap-6 text-white">
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold mb-2">2020</div>
+                                    <div class="text-sm opacity-90">Tahun Didirikan</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold mb-2">500+</div>
+                                    <div class="text-sm opacity-90">Happy Clients</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold mb-2">50+</div>
+                                    <div class="text-sm opacity-90">Team Members</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold mb-2">99.9%</div>
+                                    <div class="text-sm opacity-90">Uptime</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nilai-Nilai Kami</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Nilai-nilai ini memandu setiap keputusan dan tindakan kami dalam memberikan service terbaik.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center animate-on-scroll">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Inovasi</h3>
+                    <p class="text-gray-600">
+                        Kami selalu mencari cara baru untuk meningkatkan platform dan memberikan nilai lebih kepada pengguna.
+                    </p>
+                </div>
+
+                <div class="text-center animate-on-scroll">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Kolaborasi</h3>
+                    <p class="text-gray-600">
+                        Kami percaya bahwa kerjasama tim dan partnership yang kuat adalah kunci kesuksesan bersama.
+                    </p>
+                </div>
+
+                <div class="text-center animate-on-scroll">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-star text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Excellence</h3>
+                    <p class="text-gray-600">
+                        Kami berkomitmen untuk memberikan kualitas terbaik dalam setiap aspek layanan dan produk kami.
+                    </p>
+                </div>
+
+                <div class="text-center animate-on-scroll">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Customer First</h3>
+                    <p class="text-gray-600">
+                        Kepuasan dan kesuksesan customer adalah prioritas utama dalam setiap keputusan yang kami buat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tim Leadership</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Bertemu dengan para pemimpin yang membawa visi HyperScale menjadi kenyataan.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center group animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 bg-gradient-to-br from-primary-400 to-purple-500 rounded-full mx-auto flex items-center justify-center text-white text-4xl font-bold group-hover:scale-105 transition-transform">
+                            AS
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Ahmad Sutrisno</h3>
+                    <p class="text-primary-600 mb-3">CEO & Founder</p>
+                    <p class="text-gray-600 text-sm">
+                        Berpengalaman 15+ tahun di industri teknologi, memimpin visi strategis HyperScale.
+                    </p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="text-center group animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 bg-gradient-to-br from-green-400 to-blue-500 rounded-full mx-auto flex items-center justify-center text-white text-4xl font-bold group-hover:scale-105 transition-transform">
+                            SR
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Sari Rahayu</h3>
+                    <p class="text-primary-600 mb-3">CTO</p>
+                    <p class="text-gray-600 text-sm">
+                        Expert dalam cloud architecture dan sistem terdistribusi, memimpin inovasi teknis.
+                    </p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="text-center group animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 bg-gradient-to-br from-orange-400 to-red-500 rounded-full mx-auto flex items-center justify-center text-white text-4xl font-bold group-hover:scale-105 transition-transform">
+                            BP
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Budi Pratama</h3>
+                    <p class="text-primary-600 mb-3">VP Engineering</p>
+                    <p class="text-gray-600 text-sm">
+                        Memimpin tim engineering untuk memastikan platform yang robust dan scalable.
+                    </p>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="text-center group animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full mx-auto flex items-center justify-center text-white text-4xl font-bold group-hover:scale-105 transition-transform">
+                            DP
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Dewi Permata</h3>
+                    <p class="text-primary-600 mb-3">VP Sales & Marketing</p>
+                    <p class="text-gray-600 text-sm">
+                        Bertanggung jawab atas pertumbuhan bisnis dan membangun relationship dengan clients.
+                    </p>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="text-center group animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 bg-gradient-to-br from-indigo-400 to-cyan-500 rounded-full mx-auto flex items-center justify-center text-white text-4xl font-bold group-hover:scale-105 transition-transform">
+                            RH
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Rini Hartono</h3>
+                    <p class="text-primary-600 mb-3">VP Customer Success</p>
+                    <p class="text-gray-600 text-sm">
+                        Memastikan customer experience yang luar biasa dan support yang responsif.
+                    </p>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="text-center group animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full mx-auto flex items-center justify-center text-white text-4xl font-bold group-hover:scale-105 transition-transform">
+                            AF
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Andi Firmansyah</h3>
+                    <p class="text-primary-600 mb-3">VP Operations</p>
+                    <p class="text-gray-600 text-sm">
+                        Mengelola operasional platform untuk memastikan performa dan reliability optimal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Perjalanan Kami</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Dari ide sederhana hingga menjadi platform PaaS terpercaya.
+                </p>
+            </div>
+
+            <div class="relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary-200"></div>
+                
+                <div class="space-y-12">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right animate-on-scroll">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">2020 - Pendirian</h3>
+                            <p class="text-gray-600">
+                                HyperScale didirikan dengan visi menghadirkan solusi cloud yang mudah digunakan untuk developer Indonesia.
+                            </p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white"></div>
+                        <div class="w-1/2 pl-8 animate-on-scroll">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">2021 - Platform Launch</h3>
+                            <p class="text-gray-600">
+                                Meluncurkan platform pertama dengan dukungan Node.js dan Python, melayani 50+ early adopters.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right animate-on-scroll">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">2022 - Ekspansi Fitur</h3>
+                            <p class="text-gray-600">
+                                Menambahkan database managed services, auto-scaling, dan monitoring real-time. Mencapai 200+ active users.
+                            </p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white"></div>
+                        <div class="w-1/2 pl-8 animate-on-scroll">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">2023 - Series A</h3>
+                            <p class="text-gray-600">
+                                Memperoleh funding Series A untuk ekspansi regional dan pengembangan AI-powered features.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5 -->
+                    <div class="relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right animate-on-scroll">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">2024 - Enterprise Ready</h3>
+                            <p class="text-gray-600">
+                                Meluncurkan enterprise features dengan compliance SOC 2 dan ISO 27001. Melayani 500+ clients.
+                            </p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-on-scroll">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Bergabunglah dengan Perjalanan Kami
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Jadilah bagian dari komunitas developer yang menggunakan HyperScale untuk membangun masa depan teknologi.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                    Hubungi Kami
+                </a>
+                <a href="services.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-primary-600 transition-colors">
+                    Lihat Layanan
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-gradient-to-r from-primary-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-cube text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">HyperScale</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Platform as a Service terdepan untuk mengembangkan, deploy, dan mengelola aplikasi modern dengan mudah.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Produk</h3>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Platform Overview</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Hosting</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Database</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Analytics</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Perusahaan</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">Tim</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Karir</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Support</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Dokumentasi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Status Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400">© 2024 HyperScale. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
