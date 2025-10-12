@@ -49,7 +49,8 @@ document.addEventListener('alpine:init', () => {
         formData: {
             name: '',
             email: '',
-            company: '',
+            phone: '',
+            subject: '',
             message: ''
         },
         isSubmitting: false,
@@ -58,22 +59,94 @@ document.addEventListener('alpine:init', () => {
         async submitForm() {
             this.isSubmitting = true;
             
-            // Simulate form submission
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            try {
+                // Prepare form data
+                const formData = new FormData();
+                formData.append('name', this.formData.name);
+                formData.append('email', this.formData.email);
+                formData.append('phone', this.formData.phone || '');
+                formData.append('inquiry_type', this.formData.subject);
+                formData.append('message', this.formData.message);
+                formData.append('_subject', 'Pesan Baru dari Website HyperScale');
+                formData.append('_captcha', 'false');
+                formData.append('_template', 'table');
+                formData.append('_autoresponse', 'Terima kasih telah menghubungi HyperScale. Tim kami akan segera merespons dalam 24 jam.');
+
+                // Submit to FormSubmit
+                const response = await fetch('https://formsubmit.co/raffayudapratama20@gmail.com', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    // Show success toast
+                    this.showToast('success', 'Pesan Berhasil Dikirim!', 'Tim kami akan segera merespons dalam 24 jam. Terima kasih!');
+                    
+                    // Reset form
+                    this.formData = {
+                        name: '',
+                        email: '',
+                        phone: '',
+                        subject: '',
+                        message: ''
+                    };
+                    
+                    this.isSubmitted = true;
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                // Show error toast
+                this.showToast('error', 'Gagal Mengirim Pesan', 'Terjadi kesalahan. Silakan coba lagi atau hubungi kami via WhatsApp.');
+            } finally {
+                this.isSubmitting = false;
+            }
+        },
+
+        showToast(type, title, message) {
+            const toastContainer = document.getElementById('toast-container');
+            const toastId = 'toast-' + Date.now();
             
-            this.isSubmitting = false;
-            this.isSubmitted = true;
+            const toast = document.createElement('div');
+            toast.id = toastId;
+            toast.className = `toast ${type}`;
             
-            // Reset form after 3 seconds
+            toast.innerHTML = `
+                <div class="toast-header">
+                    <div class="toast-icon">
+                        <i class="fas fa-${type === 'success' ? 'check' : 'exclamation-triangle'}"></i>
+                    </div>
+                    <div class="toast-title">${title}</div>
+                    <button class="toast-close" onclick="hideToast('${toastId}')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="toast-message">${message}</div>
+                <div class="toast-progress"></div>
+            `;
+            
+            toastContainer.appendChild(toast);
+            
+            // Show toast
             setTimeout(() => {
-                this.isSubmitted = false;
-                this.formData = {
-                    name: '',
-                    email: '',
-                    company: '',
-                    message: ''
-                };
-            }, 3000);
+                toast.classList.add('show');
+            }, 100);
+            
+            // Auto hide after 5 seconds
+            setTimeout(() => {
+                this.hideToast(toastId);
+            }, 5000);
+        },
+
+        hideToast(toastId) {
+            const toast = document.getElementById(toastId);
+            if (toast) {
+                toast.classList.add('hide');
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }
         }
     }));
 
@@ -110,3 +183,14 @@ document.addEventListener('alpine:init', () => {
         }
     }));
 });
+
+// Global function for hiding toast
+function hideToast(toastId) {
+    const toast = document.getElementById(toastId);
+    if (toast) {
+        toast.classList.add('hide');
+        setTimeout(() => {
+            toast.remove();
+        }, 300);
+    }
+}
