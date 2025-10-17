@@ -1,7 +1,33 @@
-/* Custom CSS for HyperScale */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
-/* Custom animations */
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-primary-50: oklch(0.96796 0.00662 336.49);
+  --color-primary-100: oklch(0.93419 0.03126 217.38);
+  --color-primary-200: oklch(0.87225 0.07978 218.37);
+  --color-primary-300: oklch(0.78015 0.1515 219.55);
+  --color-primary-400: oklch(0.66779 0.2341 221.48);
+  --color-primary-500: oklch(0.57147 0.32073 215.51);
+  --color-primary-600: oklch(0.49691 0.32215 218.94);
+  --color-primary-700: oklch(0.42143 0.32068 219.76);
+  --color-primary-800: oklch(0.37492 0.17466 240.16);
+  --color-primary-900: oklch(0.33833 0.10339 269.29);
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -35,8 +61,9 @@
   }
 }
 
-@keyframes pulse {
-  0%, 100% {
+@keyframes pulseCustom {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -44,9 +71,9 @@
   }
 }
 
-/* Blob animation for hero background */
 @keyframes blob {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
   }
   33% {
@@ -57,9 +84,9 @@
   }
 }
 
-/* Float animation */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -67,7 +94,6 @@
   }
 }
 
-/* Animation utilities */
 .animate-blob {
   animation: blob 7s infinite;
 }
@@ -84,10 +110,12 @@
   animation-delay: 4s;
 }
 
-/* Grid background pattern */
 .bg-grid-white {
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
   background-size: 40px 40px;
 }
@@ -105,10 +133,9 @@
 }
 
 .animate-pulse-custom {
-  animation: pulse 2s infinite;
+  animation: pulseCustom 2s infinite;
 }
 
-/* Custom gradient backgrounds */
 .gradient-bg {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
@@ -121,14 +148,12 @@
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
-/* Glass morphism effect */
 .glass {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -146,12 +171,10 @@
   background: #5a6fd8;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom button hover effects */
 .btn-primary {
   transition: all 0.3s ease;
 }
@@ -161,7 +184,6 @@ html {
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
-/* Card hover effects */
 .card-hover {
   transition: all 0.3s ease;
 }
@@ -171,22 +193,20 @@ html {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* Text gradient */
 .text-gradient {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
-/* Floating WhatsApp Button */
 .whatsapp-float {
   position: fixed;
   width: 60px;
   height: 60px;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -202,10 +222,9 @@ html {
 }
 
 .whatsapp-float:hover {
-  background-color: #128C7E;
+  background-color: #128c7e;
   transform: scale(1.1);
   box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
-  color: white;
   text-decoration: none;
 }
 
@@ -221,7 +240,6 @@ html {
   }
 }
 
-/* WhatsApp tooltip */
 .whatsapp-tooltip {
   position: absolute;
   right: 70px;
@@ -241,7 +259,7 @@ html {
 }
 
 .whatsapp-tooltip::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 100%;
@@ -256,7 +274,6 @@ html {
   visibility: visible;
 }
 
-/* Responsive WhatsApp button */
 @media (max-width: 768px) {
   .whatsapp-float {
     width: 55px;
@@ -265,7 +282,7 @@ html {
     right: 15px;
     font-size: 26px;
   }
-  
+
   .whatsapp-tooltip {
     right: 65px;
     font-size: 12px;
@@ -273,7 +290,6 @@ html {
   }
 }
 
-/* Toast Notification */
 .toast-container {
   position: fixed;
   top: 20px;
@@ -283,7 +299,8 @@ html {
 }
 
 .toast {
-  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  position: relative;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: white;
   padding: 16px 20px;
   border-radius: 12px;
@@ -293,6 +310,7 @@ html {
   opacity: 0;
   transition: all 0.3s ease;
   border-left: 4px solid #047857;
+  overflow: hidden;
 }
 
 .toast.show {
@@ -374,14 +392,12 @@ html {
   }
 }
 
-/* Error Toast */
 .toast.error {
-  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
-  border-left-color: #B91C1C;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border-left-color: #b91c1c;
   box-shadow: 0 10px 25px rgba(239, 68, 68, 0.3);
 }
 
-/* Mobile toast adjustments */
 @media (max-width: 768px) {
   .toast-container {
     top: 10px;
@@ -389,16 +405,38 @@ html {
     left: 10px;
     max-width: none;
   }
-  
+
   .toast {
     transform: translateY(-100%);
   }
-  
+
   .toast.show {
     transform: translateY(0);
   }
-  
+
   .toast.hide {
     transform: translateY(-100%);
   }
+}
+
+.toast-enter {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.toast-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 150ms ease-out;
+}
+
+.toast-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-exit-active {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: all 150ms ease-in;
 }
