@@ -62,11 +62,11 @@
 </script>
 
 <!-- Hero Section -->
-<section class="relative pt-20 pb-32 bg-gradient-to-br from-gray-900 via-primary-900 to-purple-900 overflow-hidden">
+<section class="relative pt-20 pb-32 bg-gradient-to-br from-gray-900 via-primary-900 to-gray-800 overflow-hidden">
   <div class="absolute inset-0">
     <div class="absolute top-20 -left-20 w-96 h-96 bg-primary-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-    <div class="absolute top-40 -right-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-    <div class="absolute -bottom-20 left-40 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+    <div class="absolute top-40 -right-20 w-96 h-96 bg-primary-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-20 left-40 w-96 h-96 bg-primary-700 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
     <div class="absolute inset-0 bg-grid-white opacity-5"></div>
     <div class="absolute top-32 left-1/4 animate-float">
       <div class="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center transform -rotate-12">
@@ -98,7 +98,7 @@
       <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
         Deploy Aplikasi Anda
         <br />
-        <span class="bg-gradient-to-r from-primary-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+        <span class="bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent">
           Dalam Hitungan Detik
         </span>
       </h1>
@@ -110,13 +110,13 @@
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
         <a
           href="/contact"
-          class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-primary-600 to-purple-600 rounded-xl overflow-hidden shadow-2xl hover:shadow-primary-500/50 transition-all duration-300 transform hover:scale-105"
+          class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-primary-600 rounded-xl overflow-hidden shadow-2xl hover:shadow-primary-500/50 transition-all duration-300 transform hover:scale-105"
         >
           <span class="relative z-10 flex items-center">
             <i class="fas fa-rocket mr-2" aria-hidden="true"></i>
             Mulai Gratis
           </span>
-          <div class="absolute inset-0 bg-gradient-to-r from-primary-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute inset-0 bg-primary-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </a>
         <a
           href="/services"
@@ -146,8 +146,8 @@
     </div>
 
     <div class="relative max-w-5xl mx-auto" use:animateOnScroll>
-      <div class="relative">
-        <div class="absolute -inset-4 bg-gradient-to-r from-primary-500 to-purple-500 rounded-3xl blur-2xl opacity-30"></div>
+  <div class="relative">
+  <div class="absolute -inset-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-3xl blur-2xl opacity-30"></div>
         <div class="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl overflow-hidden shadow-2xl">
           <div class="flex items-center justify-between px-6 py-4 border-b border-white/10">
             <div class="flex space-x-2">
@@ -178,7 +178,7 @@
                 </div>
               </div>
 
-              <div class="bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-xl p-4 border border-primary-500/30">
+              <div class="bg-gradient-to-br from-primary-500/20 to-primary-500/20 rounded-xl p-4 border border-primary-500/30">
                 <div class="flex items-center justify-between mb-3">
                   <span class="text-white/80 text-sm font-semibold">Performance</span>
                   <i class="fas fa-chart-line text-green-400" aria-hidden="true"></i>
@@ -208,7 +208,7 @@
                       <span>89ms</span>
                     </div>
                     <div class="h-2 bg-white/10 rounded-full overflow-hidden">
-                      <div class="h-full bg-gradient-to-r from-purple-400 to-purple-500 rounded-full" style="width: 65%"></div>
+                      <div class="h-full bg-gradient-to-r from-primary-400 to-primary-500 rounded-full" style="width: 65%"></div>
                     </div>
                   </div>
                 </div>
@@ -246,7 +246,7 @@
 <!-- Features Section -->
 <section class="py-20 bg-white relative overflow-hidden">
   <div class="absolute top-0 right-0 w-96 h-96 bg-primary-100 rounded-full filter blur-3xl opacity-30 -translate-y-1/2 translate-x-1/2"></div>
-  <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-100 rounded-full filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-100 rounded-full filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="text-center mb-16" use:animateOnScroll>
@@ -255,7 +255,7 @@
       </div>
       <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
         Mengapa Memilih
-        <span class="bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">HyperScale</span>?
+        <span class="bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">HyperScale</span>?
       </h2>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
         Platform kami dirancang untuk memberikan pengalaman development yang seamless dengan fitur-fitur canggih dan performa tinggi.
@@ -267,9 +267,9 @@
         class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-primary-200 transition-all duration-500 overflow-hidden"
         use:animateOnScroll
       >
-        <div class="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-primary-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div class="relative z-10">
-          <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+          <div class="w-16 h-16 bg-primary-500 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
             <i class="fas fa-rocket text-white text-2xl" aria-hidden="true"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary-600 transition-colors">Deploy Instant</h3>
@@ -285,108 +285,108 @@
       </div>
 
       <div
-        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-green-200 transition-all duration-500 overflow-hidden"
+        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-gray-300 transition-all duration-500 overflow-hidden"
         use:animateOnScroll
       >
-        <div class="absolute inset-0 bg-gradient-to-br from-green-500/5 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-gray-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div class="relative z-10">
-          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+          <div class="w-16 h-16 bg-gray-700 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
             <i class="fas fa-expand-arrows-alt text-white text-2xl" aria-hidden="true"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">Auto Scaling</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-700 transition-colors">Auto Scaling</h3>
           <p class="text-gray-600 leading-relaxed">
             Skala aplikasi Anda secara otomatis berdasarkan traffic dan beban kerja tanpa intervensi manual.
           </p>
-          <div class="mt-4 flex items-center text-green-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <div class="mt-4 flex items-center text-gray-700 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <span class="text-sm">Learn more</span>
             <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform" aria-hidden="true"></i>
           </div>
         </div>
-        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-200 to-transparent rounded-bl-full opacity-20"></div>
+        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-gray-200 to-transparent rounded-bl-full opacity-20"></div>
       </div>
 
       <div
-        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-blue-200 transition-all duration-500 overflow-hidden"
+        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-primary-200 transition-all duration-500 overflow-hidden"
         use:animateOnScroll
       >
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-primary-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div class="relative z-10">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+          <div class="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
             <i class="fas fa-shield-alt text-white text-2xl" aria-hidden="true"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Keamanan Terjamin</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary-600 transition-colors">Keamanan Terjamin</h3>
           <p class="text-gray-600 leading-relaxed">
             Enterprise-grade security dengan SSL encryption, DDoS protection, dan compliance standards.
           </p>
-          <div class="mt-4 flex items-center text-blue-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <div class="mt-4 flex items-center text-primary-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <span class="text-sm">Learn more</span>
             <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform" aria-hidden="true"></i>
           </div>
         </div>
-        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-200 to-transparent rounded-bl-full opacity-20"></div>
+        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-200 to-transparent rounded-bl-full opacity-20"></div>
       </div>
 
       <div
-        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-purple-200 transition-all duration-500 overflow-hidden"
+        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-gray-300 transition-all duration-500 overflow-hidden"
         use:animateOnScroll
       >
-        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-gray-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div class="relative z-10">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+          <div class="w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
             <i class="fas fa-cogs text-white text-2xl" aria-hidden="true"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">DevOps Friendly</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors">DevOps Friendly</h3>
           <p class="text-gray-600 leading-relaxed">
             Integrasi CI/CD, observability, dan pipeline otomatis yang mempermudah workflow tim DevOps Anda.
           </p>
-          <div class="mt-4 flex items-center text-purple-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <div class="mt-4 flex items-center text-gray-800 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <span class="text-sm">Learn more</span>
             <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform" aria-hidden="true"></i>
           </div>
         </div>
-        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-purple-200 to-transparent rounded-bl-full opacity-20"></div>
+        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-gray-200 to-transparent rounded-bl-full opacity-20"></div>
       </div>
 
       <div
-        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-amber-200 transition-all duration-500 overflow-hidden"
+        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-primary-200 transition-all duration-500 overflow-hidden"
         use:animateOnScroll
       >
-        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-primary-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div class="relative z-10">
-          <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+          <div class="w-16 h-16 bg-primary-700 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
             <i class="fas fa-chart-line text-white text-2xl" aria-hidden="true"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-amber-600 transition-colors">Analytics Mendalam</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary-700 transition-colors">Analytics Mendalam</h3>
           <p class="text-gray-600 leading-relaxed">
             Insight real-time mengenai performa aplikasi dengan dashboard interaktif dan alert cerdas.
           </p>
-          <div class="mt-4 flex items-center text-amber-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <div class="mt-4 flex items-center text-primary-700 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <span class="text-sm">Learn more</span>
             <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform" aria-hidden="true"></i>
           </div>
         </div>
-        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-amber-200 to-transparent rounded-bl-full opacity-20"></div>
+        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-200 to-transparent rounded-bl-full opacity-20"></div>
       </div>
 
       <div
-        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 overflow-hidden"
+        class="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl hover:border-gray-300 transition-all duration-500 overflow-hidden"
         use:animateOnScroll
       >
-        <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-gray-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div class="relative z-10">
-          <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+          <div class="w-16 h-16 bg-gray-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
             <i class="fas fa-headset text-white text-2xl" aria-hidden="true"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-cyan-600 transition-colors">Support 24/7</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-600 transition-colors">Support 24/7</h3>
           <p class="text-gray-600 leading-relaxed">
             Tim support ahli siap membantu kapan pun Anda membutuhkan dengan waktu respons yang cepat.
           </p>
-          <div class="mt-4 flex items-center text-cyan-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <div class="mt-4 flex items-center text-gray-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <span class="text-sm">Learn more</span>
             <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform" aria-hidden="true"></i>
           </div>
         </div>
-        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-cyan-200 to-transparent rounded-bl-full opacity-20"></div>
+        <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-gray-200 to-transparent rounded-bl-full opacity-20"></div>
       </div>
     </div>
 
@@ -404,13 +404,13 @@
 
 <!-- Stats Section -->
 <section
-  class="relative py-24 bg-gradient-to-br from-gray-900 via-primary-900 to-purple-900 overflow-hidden"
+  class="relative py-24 bg-gradient-to-br from-gray-900 via-primary-900 to-gray-800 overflow-hidden"
   use:statsObserver
 >
   <div class="absolute inset-0">
     <div class="absolute top-0 left-0 w-full h-full bg-grid-white opacity-5"></div>
     <div class="absolute top-20 left-20 w-72 h-72 bg-primary-500 rounded-full filter blur-3xl opacity-20 animate-blob"></div>
-    <div class="absolute bottom-20 right-20 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+    <div class="absolute bottom-20 right-20 w-96 h-96 bg-primary-600 rounded-full filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
   </div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -424,7 +424,7 @@
       </div>
       <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
         Digunakan oleh
-        <span class="bg-gradient-to-r from-primary-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">banyak developer</span>
+        <span class="bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent">banyak developer</span>
       </h2>
       <p class="text-xl text-gray-300 max-w-2xl mx-auto">
         Angka-angka yang membuktikan komitmen kami untuk excellence
@@ -433,50 +433,50 @@
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-500" use:animateOnScroll>
-        <div class="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
+        <div class="absolute inset-0 bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
         <div class="relative z-10 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+          <div class="w-16 h-16 bg-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
             <i class="fas fa-users text-white text-2xl" aria-hidden="true"></i>
           </div>
           <div class="text-5xl md:text-6xl font-extrabold text-white mb-2">{Math.round(counters.clients)}+</div>
           <div class="text-lg text-gray-300 font-medium">Happy Clients</div>
-          <div class="mt-3 text-sm text-primary-400">↑ 23% this month</div>
+          <div class="mt-3 text-sm text-primary-300">↑ 23% this month</div>
         </div>
       </div>
 
       <div class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-500" use:animateOnScroll>
-        <div class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
+        <div class="absolute inset-0 bg-gray-500/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
         <div class="relative z-10 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+          <div class="w-16 h-16 bg-gray-700 rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
             <i class="fas fa-rocket text-white text-2xl" aria-hidden="true"></i>
           </div>
           <div class="text-5xl md:text-6xl font-extrabold text-white mb-2">{Math.round(counters.projects)}+</div>
           <div class="text-lg text-gray-300 font-medium">Projects Deployed</div>
-          <div class="mt-3 text-sm text-green-400">↑ 156 this week</div>
+          <div class="mt-3 text-sm text-gray-300">↑ 156 this week</div>
         </div>
       </div>
 
       <div class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-500" use:animateOnScroll>
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
+        <div class="absolute inset-0 bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
         <div class="relative z-10 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+          <div class="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
             <i class="fas fa-server text-white text-2xl" aria-hidden="true"></i>
           </div>
           <div class="text-5xl md:text-6xl font-extrabold text-white mb-2">{counters.uptime.toFixed(1)}%</div>
           <div class="text-lg text-gray-300 font-medium">Uptime</div>
-          <div class="mt-3 text-sm text-blue-400">Last 30 days</div>
+          <div class="mt-3 text-sm text-primary-300">Last 30 days</div>
         </div>
       </div>
 
       <div class="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-500" use:animateOnScroll>
-        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
+        <div class="absolute inset-0 bg-gray-500/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
         <div class="relative z-10 text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+          <div class="w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
             <i class="fas fa-headphones-alt text-white text-2xl" aria-hidden="true"></i>
           </div>
           <div class="text-5xl md:text-6xl font-extrabold text-white mb-2">{Math.round(counters.support)}/7</div>
           <div class="text-lg text-gray-300 font-medium">Support Available</div>
-          <div class="mt-3 text-sm text-purple-400">Average response: 45min</div>
+          <div class="mt-3 text-sm text-gray-300">Average response: 45min</div>
         </div>
       </div>
     </div>
@@ -494,20 +494,20 @@
 </section>
 
 <!-- CTA Section -->
-<section class="relative py-24 bg-gradient-to-br from-primary-50 via-white to-purple-50 overflow-hidden">
+<section class="relative py-24 bg-gradient-to-br from-primary-50 via-white to-gray-50 overflow-hidden">
   <div class="absolute inset-0">
     <div class="absolute top-0 right-0 w-96 h-96 bg-primary-200 rounded-full filter blur-3xl opacity-30 -translate-y-1/2 translate-x-1/2"></div>
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-200 rounded-full filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-gray-200 rounded-full filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2"></div>
     <div class="absolute top-20 left-1/4 animate-float animation-delay-2000">
       <i class="fas fa-cloud text-primary-300 text-4xl opacity-30" aria-hidden="true"></i>
     </div>
     <div class="absolute bottom-20 right-1/4 animate-float animation-delay-4000">
-      <i class="fas fa-rocket text-purple-300 text-3xl opacity-30" aria-hidden="true"></i>
+      <i class="fas fa-rocket text-gray-400 text-3xl opacity-30" aria-hidden="true"></i>
     </div>
   </div>
 
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="relative bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 rounded-3xl p-12 md:p-16 shadow-2xl overflow-hidden" use:animateOnScroll>
+    <div class="relative bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-12 md:p-16 shadow-2xl overflow-hidden" use:animateOnScroll>
       <div class="absolute inset-0 bg-grid-white opacity-10"></div>
       <div class="absolute -top-24 -right-24 w-96 h-96 bg-white rounded-full filter blur-3xl opacity-10"></div>
       <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-white rounded-full filter blur-3xl opacity-10"></div>
@@ -521,7 +521,7 @@
         <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
           Siap untuk Memulai
           <br />
-          <span class="bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300 bg-clip-text text-transparent">
+          <span class="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
             Perjalanan Cloud Anda?
           </span>
         </h2>
@@ -539,7 +539,7 @@
               <i class="fas fa-rocket mr-3" aria-hidden="true"></i>
               Mulai Sekarang
             </span>
-            <div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
           <a
             href="/services"

@@ -66,7 +66,7 @@
           <div
             class="grid h-9 w-9 place-items-center rounded-x"
           >
-            <img src="/images/black-logo.png" alt="" srcset="" />
+            <img src="/images/black-logo.png" alt="HyperScale Logo" class="w-full h-full object-contain" />
           </div>
           <span
             class="hidden sm:inline-block text-[17px] font-semibold tracking-tight text-neutral-900"

@@ -3,17 +3,17 @@
 </script>
 
 <section
-  class="relative pt-20 pb-32 bg-gradient-to-br from-gray-900 via-primary-900 to-purple-900 overflow-hidden"
+  class="relative pt-20 pb-32 bg-gradient-to-br from-gray-900 via-primary-900 to-gray-800 overflow-hidden"
 >
   <div class="absolute inset-0">
     <div
       class="absolute top-20 -left-20 w-96 h-96 bg-primary-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"
     ></div>
     <div
-      class="absolute top-40 -right-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"
+      class="absolute top-40 -right-20 w-96 h-96 bg-primary-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"
     ></div>
     <div
-      class="absolute -bottom-20 left-1/2 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"
+      class="absolute -bottom-20 left-1/2 w-96 h-96 bg-primary-700 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"
     ></div>
     <div class="absolute inset-0 bg-grid-white opacity-5"></div>
   </div>
@@ -40,7 +40,7 @@
       <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
         Tentang
         <span
-          class="bg-gradient-to-r from-primary-400 to-purple-400 bg-clip-text text-transparent"
+          class="bg-gradient-to-r from-primary-400 to-primary-500 bg-clip-text text-transparent"
           >HyperScale</span
         >
       </h1>
@@ -121,7 +121,7 @@
       <div use:animateOnScroll>
         <div class="relative">
           <div
-            class="bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl p-8 shadow-xl"
+            class="bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl p-8 shadow-xl"
           >
             <div class="grid grid-cols-2 gap-6 text-white">
               <div class="text-center">
@@ -152,7 +152,7 @@
 </section>
 
 <section
-  class="py-20 bg-gradient-to-br from-gray-50 via-primary-50/30 to-purple-50/30 relative overflow-hidden"
+  class="py-20 bg-gradient-to-br from-gray-50 via-primary-50/30 to-primary-50/30 relative overflow-hidden"
 >
   <div
     class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-100/20 to-transparent"
@@ -178,8 +178,8 @@
           use:animateOnScroll
         >
           <div class="relative">
-            <div
-              class="w-16 h-16 bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 transform group-hover:rotate-6 transition-transform duration-300"
+              <div
+              class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-6 transform group-hover:rotate-6 transition-transform duration-300"
             >
               <i class={`${value.icon} text-white text-2xl`} aria-hidden="true"
               ></i>
@@ -200,9 +200,9 @@
 
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16" use:animateOnScroll>
-      <div class="inline-block px-4 py-2 bg-purple-100 rounded-full mb-4">
-        <span class="text-purple-600 font-semibold text-sm">OUR JOURNEY</span>
+      <div class="text-center mb-16" use:animateOnScroll>
+      <div class="inline-block px-4 py-2 bg-primary-100 rounded-full mb-4">
+        <span class="text-primary-600 font-semibold text-sm">OUR JOURNEY</span>
       </div>
       <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
         Perjalanan Kami
@@ -241,7 +241,7 @@
 </section>
 
 <section
-  class="py-20 bg-gradient-to-br from-primary-50 via-white to-purple-50 overflow-hidden"
+  class="py-20 bg-gradient-to-br from-primary-50 via-white to-primary-50 overflow-hidden"
 >
   <div
     class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
@@ -269,7 +269,7 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="/contact"
-            class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+            class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-600 via-primary-700 to-primary-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
           >
             <i class="fas fa-calendar-alt mr-2" aria-hidden="true"></i>
             Jadwalkan Konsultasi

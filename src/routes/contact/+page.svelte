@@ -87,11 +87,11 @@
   {/each}
 </div>
 
-<section class="relative pt-20 pb-32 bg-gradient-to-br from-gray-900 via-primary-900 to-purple-900 overflow-hidden">
+<section class="relative pt-20 pb-32 bg-gradient-to-br from-gray-900 via-primary-900 to-gray-800 overflow-hidden">
   <div class="absolute inset-0">
     <div class="absolute top-20 -left-20 w-96 h-96 bg-primary-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-    <div class="absolute top-40 -right-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-    <div class="absolute -bottom-20 left-1/2 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+  <div class="absolute top-40 -right-20 w-96 h-96 bg-primary-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+  <div class="absolute -bottom-20 left-1/2 w-96 h-96 bg-primary-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
     <div class="absolute inset-0 bg-grid-white opacity-5"></div>
   </div>
 
@@ -110,7 +110,7 @@
       </div>
       <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
         Hubungi
-        <span class="bg-gradient-to-r from-primary-400 to-purple-400 bg-clip-text text-transparent">HyperScale</span>
+        <span class="bg-gradient-to-r from-primary-400 to-primary-500 bg-clip-text text-transparent">HyperScale</span>
       </h1>
       <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
         Tim kami siap membantu Anda menemukan solusi terbaik untuk kebutuhan platform dan aplikasi Anda. Mari diskusikan project Anda!
@@ -140,7 +140,7 @@
 
       <div class="grid sm:grid-cols-2 gap-6">
         <div class="p-6 rounded-2xl border border-gray-100 shadow-lg" use:animateOnScroll>
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-purple-600 text-white flex items-center justify-center mb-4 text-xl">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 text-white flex items-center justify-center mb-4 text-xl">
             <i class="fas fa-phone" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Telepon</h3>
@@ -148,7 +148,7 @@
           <p class="text-gray-500 text-sm">Senin - Jumat, 09.00 - 18.00 WIB</p>
         </div>
         <div class="p-6 rounded-2xl border border-gray-100 shadow-lg" use:animateOnScroll>
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-purple-600 text-white flex items-center justify-center mb-4 text-xl">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 text-white flex items-center justify-center mb-4 text-xl">
             <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Alamat</h3>
@@ -156,7 +156,7 @@
           <p class="text-gray-500 text-sm">Kunjungan by appointment</p>
         </div>
         <div class="p-6 rounded-2xl border border-gray-100 shadow-lg" use:animateOnScroll>
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-purple-600 text-white flex items-center justify-center mb-4 text-xl">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 text-white flex items-center justify-center mb-4 text-xl">
             <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Email</h3>
@@ -164,7 +164,7 @@
           <p class="text-gray-500 text-sm">Support &amp; business inquiries</p>
         </div>
         <div class="p-6 rounded-2xl border border-gray-100 shadow-lg" use:animateOnScroll>
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-purple-600 text-white flex items-center justify-center mb-4 text-xl">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 text-white flex items-center justify-center mb-4 text-xl">
             <i class="fas fa-comments" aria-hidden="true"></i>
           </div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Komunitas</h3>
@@ -175,7 +175,7 @@
     </div>
 
     <div class="relative" use:animateOnScroll>
-      <div class="absolute -inset-1 bg-gradient-to-r from-primary-500 to-purple-500 rounded-3xl blur opacity-20"></div>
+  <div class="absolute -inset-1 bg-gradient-to-r from-primary-500 to-primary-600 rounded-3xl blur opacity-20"></div>
       <form class="relative bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 space-y-6" on:submit|preventDefault={handleSubmit}>
         <div class="grid md:grid-cols-2 gap-6">
           <div>
@@ -239,7 +239,7 @@
         </div>
         <button
           type="submit"
-          class="w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+          class="w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary-600 via-primary-700 to-primary-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all disabled:opacity-60 disabled:cursor-not-allowed"
           disabled={isSubmitting}
         >
           {#if isSubmitting}
@@ -258,7 +258,7 @@
   </div>
 </section>
 
-<section class="py-20 bg-gradient-to-br from-primary-50 via-white to-purple-50 overflow-hidden">
+<section class="py-20 bg-gradient-to-br from-primary-50 via-white to-primary-50 overflow-hidden">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" use:animateOnScroll>
     <div class="relative bg-white rounded-3xl shadow-2xl border border-primary-100 p-10 md:p-16">
       <div class="absolute inset-0 bg-grid-white opacity-10 rounded-3xl"></div>
@@ -274,7 +274,7 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="mailto:support@hyperscale.id"
-            class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+            class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-600 via-primary-700 to-primary-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
           >
             <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
             Email Support

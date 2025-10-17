@@ -2,11 +2,11 @@
   import { animateOnScroll } from '$lib/actions/animateOnScroll';
 </script>
 
-<section class="relative pt-20 pb-32 bg-gradient-to-br from-gray-900 via-primary-900 to-purple-900 overflow-hidden">
+<section class="relative pt-20 pb-32 bg-gradient-to-br from-gray-900 via-primary-900 to-gray-800 overflow-hidden">
   <div class="absolute inset-0">
     <div class="absolute top-16 -left-16 w-80 h-80 bg-primary-500 rounded-full filter blur-3xl opacity-30 animate-blob"></div>
-    <div class="absolute top-32 -right-16 w-80 h-80 bg-purple-500 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-    <div class="absolute bottom-24 left-1/2 w-72 h-72 bg-pink-500 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+    <div class="absolute top-32 -right-16 w-80 h-80 bg-primary-600 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+    <div class="absolute bottom-24 left-1/2 w-72 h-72 bg-primary-700 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
     <div class="absolute inset-0 bg-grid-white opacity-5"></div>
   </div>
 
@@ -14,7 +14,7 @@
     <div class="text-center mb-16" use:animateOnScroll>
       <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
         Layanan
-        <span class="bg-gradient-to-r from-primary-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">HyperScale</span>
+        <span class="bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent">HyperScale</span>
       </h1>
       <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
         Infrastruktur cloud modern dengan fitur lengkap untuk membantu tim Anda membangun, mengelola, dan menskalakan aplikasi dalam hitungan menit.
@@ -22,7 +22,7 @@
       <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
         <a
           href="#pricing"
-          class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
+          class="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all"
         >
           <i class="fas fa-tags mr-2" aria-hidden="true"></i>
           Lihat Harga
@@ -95,7 +95,7 @@
         }
       ] as feature}
         <div class="group bg-white border border-gray-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" use:animateOnScroll>
-          <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-primary-500 to-purple-600 text-white text-2xl mb-6">
+          <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-primary-500 text-white text-2xl mb-6">
             <i class={feature.icon} aria-hidden="true"></i>
           </div>
           <h3 class="text-2xl font-semibold text-gray-900 mb-4">{feature.title}</h3>
@@ -106,7 +106,7 @@
   </div>
 </section>
 
-<section id="pricing" class="py-20 bg-gradient-to-br from-primary-50 via-white to-purple-50 overflow-hidden">
+<section id="pricing" class="py-20 bg-gradient-to-br from-primary-50 via-white to-gray-50 overflow-hidden">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="text-center mb-16" use:animateOnScroll>
       <div class="inline-flex items-center px-4 py-2 bg-white text-primary-600 rounded-full font-semibold shadow-sm mb-4">
@@ -146,7 +146,7 @@
           use:animateOnScroll
         >
           {#if tier.popular}
-            <span class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-primary-500 to-purple-600 text-white text-sm font-semibold rounded-full shadow">
+            <span class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary-500 text-white text-sm font-semibold rounded-full shadow">
               Paling Populer
             </span>
           {/if}
@@ -166,7 +166,7 @@
             class="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold transition-all"
             class:bg-gradient-to-r={tier.popular}
             class:from-primary-600={tier.popular}
-            class:to-purple-600={tier.popular}
+            class:to-primary-700={tier.popular}
             class:text-white={tier.popular}
             class:border={!tier.popular}
             class:border-primary-200={!tier.popular}
@@ -184,7 +184,7 @@
 
 <section class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="relative bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 rounded-3xl p-12 md:p-16 shadow-2xl overflow-hidden" use:animateOnScroll>
+    <div class="relative bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-12 md:p-16 shadow-2xl overflow-hidden" use:animateOnScroll>
       <div class="absolute inset-0 bg-grid-white opacity-10"></div>
       <div class="relative text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
