@@ -64,9 +64,9 @@
           class="group flex items-center gap-2"
         >
           <div
-            class="grid h-9 w-9 place-items-center rounded-xl bg-neutral-900 text-white shadow-[0_4px_14px_rgba(0,0,0,0.18)] transition-transform group-hover:scale-105"
+            class="grid h-9 w-9 place-items-center rounded-x"
           >
-            <i class="fas fa-cube text-[13px]" aria-hidden="true"></i>
+            <img src="/images/black-logo.png" alt="" srcset="" />
           </div>
           <span
             class="hidden sm:inline-block text-[17px] font-semibold tracking-tight text-neutral-900"
