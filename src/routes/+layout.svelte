@@ -1,6 +1,7 @@
 <script lang="ts">
-  import Navigation from '$lib/components/Navigation.svelte';
-  import Footer from '$lib/components/Footer.svelte';
+  import "../app.css";
+  import Navigation from "../lib/components/Navigation.svelte";
+  import Footer from "../lib/components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -9,12 +10,15 @@
     name="description"
     content="HyperScale menyediakan solusi Platform as a Service (PaaS) terdepan untuk mempercepat pengembangan dan deployment aplikasi Anda."
   />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </svelte:head>
 
 <Navigation />
 
-<main class="pt-20 min-h-screen bg-white text-gray-900">
+<main class="min-h-screen bg-white text-gray-900">
   <slot />
 </main>
 
