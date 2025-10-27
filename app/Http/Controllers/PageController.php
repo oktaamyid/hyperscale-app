@@ -30,4 +30,9 @@ class PageController extends Controller
     {
         return view('pages.portal');
     }
+
+    public function dashboard()
+    {
+        return view('pages.dashboard');
+    }
 }

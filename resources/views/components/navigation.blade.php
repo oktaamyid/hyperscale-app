@@ -45,6 +45,12 @@
                 <div class="flex items-center gap-2">
                     @auth
                         <div class="hidden sm:flex items-center gap-3">
+                            <a href="{{ route('dashboard') }}"
+                               class="inline-flex items-center justify-center rounded-full px-4 py-1.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 group"
+                               style="background: linear-gradient(135deg, rgba(26, 115, 232, 0.9) 0%, rgba(26, 115, 232, 0.8) 50%, rgba(26, 115, 232, 0.9) 100%); border: 1px solid rgba(26, 115, 232, 0.3); box-shadow: 0 8px 24px rgba(26, 115, 232, 0.2), 0 4px 12px rgba(26, 115, 232, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
+                                <i class="fas fa-th-large mr-2"></i>
+                                <span class="relative z-10">Dashboard</span>
+                            </a>
                             <div class="flex items-center gap-2">
                                 @if(Auth::user()->avatar)
                                     <img src="{{ Auth::user()->avatar }}" alt="{{ Auth::user()->name }}" class="w-8 h-8 rounded-full border-2 border-white shadow">
@@ -145,6 +151,12 @@
                                 <p class="text-xs text-gray-600">{{ Auth::user()->email }}</p>
                             </div>
                         </div>
+                        <a href="{{ route('dashboard') }}" @click="mobileMenuOpen = false"
+                           class="w-full flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-[15px] font-semibold text-white transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] group mb-2"
+                           style="background: linear-gradient(135deg, rgba(26, 115, 232, 0.95) 0%, rgba(26, 115, 232, 0.85) 50%, rgba(26, 115, 232, 0.95) 100%); border: 1px solid rgba(26, 115, 232, 0.4); box-shadow: 0 8px 24px rgba(26, 115, 232, 0.25), 0 4px 12px rgba(26, 115, 232, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.25); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
+                            <i class="fas fa-th-large text-sm"></i>
+                            <span>Dashboard</span>
+                        </a>
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
                             <button type="submit" @click="mobileMenuOpen = false"

@@ -39,3 +39,8 @@ Route::post('/payment/process', [PaymentController::class, 'process'])->name('pa
 
 // Contact Route
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+
+// Dashboard Routes (Protected)
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
+});
